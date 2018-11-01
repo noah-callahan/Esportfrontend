@@ -7,15 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <body>
+    <div style="height:110px;">
+    <div id="navbar">
     <div class="top-bar-div">
         <div class="container top-nav">
             <div class="left-nav-div">
                 <ul class="top-bar">
                     <li>Latest</li>
-                    <li>All Games</li>
-                    <li>Pro Teams</li>
+                    <div class="dropdown">
+                        <li class="dropbtn">Games <i class="fa fa-sort-desc" aria-hidden="true"></i></li>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                          <a href="#">Link 3</a>
+                          <a href="#">Link 3</a>
+                          <a href="#">Link 3</a>
+                          <a href="#">Link 3</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <li>Pro Teams <i class="fa fa-sort-desc" aria-hidden="true"></i></li>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                          <a href="#">Link 3</a>
+                          <a href="#">Link 3</a>
+                          <a href="#">Link 3</a>
+                          <a href="#">Link 3</a>
+                          <a href="#">Link 3</a>
+                    </div>
                     <li>Reviews</li>
                 </ul>
             </div>
@@ -29,29 +55,30 @@
             </div>
         </div>
     </div>
-    <div class="main-nav-div">
+    <div class="main-nav-div" id="main-nav-div">
         <div class="container main-nav">
             <div class="main-nav-cont">
                 <ul>
-                    <li><img src="images/logo.png" class="nav-logo"></li>
+                    <li><img src="images/logo.png" class="nav-logo" id="nav-logo"></li>
                     <li>CS:GO</li>
                     <li>DOTA 2</li>
                     <li>HEARTHSTONE</li>
                     <li>LEAGUE OF LEGENDS</li>
                     <li>OVERWATCH</li>
+                    <li class="search"><a class="fa fa-search"></a></li>
                 </ul>
             </div>
 
-            <div class="search-container">
-                <p class="fa fa-search"></p>
-            </div>
+          
         </div>
         
     </div>
-    <div class="ad-bar-div">
+</div>
+</div>
+    <div class="ad-bar-div" id="ad-bar-div">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
+            <div class="row ad-shrink">
+                <div class="col-sm-4 ad-resize">
                     <div class="ad-banner">
                         <img src="images/mouse.jpg" class="ad">
                         <p style="padding-top:3px;">Product Review: HyperX Pulsefire FPS Pro Gaming Mouse<br/><span style="font-size:12px;">By Stephan Draper</span></p>
@@ -75,7 +102,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 content-container">.col-sm-4</div>
+            <div class="col-sm-8 content-container" style="height:1200px;">.col-sm-4</div>
                 <div class="col-sm-4 news-container">
                     <div class="news">
                             <p>GENERAL NEWS</p>
@@ -126,5 +153,5 @@
     </div>
     
 </body>
-<script src="main.js"></script>
+<script src="scripts/main.js"></script>
 </html>
